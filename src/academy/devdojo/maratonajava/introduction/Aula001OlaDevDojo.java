@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.introduction;
 
 /**
- * Isso é um comentário javadoc
+ * Isso é um comentário <b>javadoc</b>
  */
-public class OlaDevDojo {
+public class Aula001OlaDevDojo {
 
     // Isso é um comentário em linha
     /*
