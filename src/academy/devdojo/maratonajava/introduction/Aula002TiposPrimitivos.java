@@ -6,9 +6,10 @@ import java.util.List;
 public class Aula002TiposPrimitivos {
     public static void main(String[] args) {
         //int, double, float, char, short, long, boolean
-        int idade = 10;
-        double salarioDouble = 2000;
-        float salarioFloat = 2500;
+        int idade = (int) 10000000000L;
+        long numeroGrande = 100000L;
+        double salarioDouble = 2000.0D;
+        float salarioFloat = (float) 2500.0D;
         byte idadeByte = 10;
         short idadeShort = 10;
         boolean verdadeiro = true;
