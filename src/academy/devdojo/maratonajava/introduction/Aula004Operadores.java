@@ -11,9 +11,26 @@ public class Aula004Operadores {
         int multiplicacao = numero01 * numero02;
         double divisao = numero01 / numero02;
 
-        System.out.println(soma);
-        System.out.println(subtracao);
-        System.out.println(multiplicacao);
-        System.out.println(divisao);
+        System.out.println("Soma: " + soma);
+        System.out.println("Subtração: " + subtracao);
+        System.out.println("Multiplicação: " + multiplicacao);
+        System.out.println("Divisão: " + divisao);
+
+        // %
+        int resto = 21 % 7;
+        System.out.println("Resto Divisão: " + resto);
+
+        // < > <= >= == !=
+        boolean isDezMaiorQueVinte = 10 > 20;
+        boolean isDezMenorQueVinte = 10 < 20;
+        boolean isDezIgualVinte = 10 == 20;
+        boolean isDezIgualDez = 10 == 10;
+        boolean isDezDiferenteDez = 10 != 10;
+        
+        System.out.println("isDezMaiorQueVinte: " + isDezMaiorQueVinte);
+        System.out.println("isDezMenorQueVinte: " + isDezMenorQueVinte);
+        System.out.println("isDezIgualVinte: " + isDezIgualVinte);
+        System.out.println("isDezIgualDez: " + isDezIgualDez);
+        System.out.println("isDezDiferenteDez: " + isDezDiferenteDez);
     }
 }
