@@ -26,11 +26,20 @@ public class Aula004Operadores {
         boolean isDezIgualVinte = 10 == 20;
         boolean isDezIgualDez = 10 == 10;
         boolean isDezDiferenteDez = 10 != 10;
-        
+
         System.out.println("isDezMaiorQueVinte: " + isDezMaiorQueVinte);
         System.out.println("isDezMenorQueVinte: " + isDezMenorQueVinte);
         System.out.println("isDezIgualVinte: " + isDezIgualVinte);
         System.out.println("isDezIgualDez: " + isDezIgualDez);
         System.out.println("isDezDiferenteDez: " + isDezDiferenteDez);
+
+        // && (AND) || (OR) ! (Logical Not)
+        int idade = 29;
+        float salario = 3500F;
+        boolean isDentroLeiMaiorTrinta = idade >= 30 && salario >= 4612;
+        boolean isDentroLeiMenorTrinta = idade < 30 && salario >= 3381;
+
+        System.out.println("isDentroLeiMaiorTrinta: " + isDentroLeiMaiorTrinta);
+        System.out.println("isDentroLeiMenorTrinta: " + isDentroLeiMenorTrinta);
     }
 }
