@@ -11,4 +11,3 @@ public class Aula007Arrays01 {
         System.out.println(idades[2]);
     }
 }
- 
