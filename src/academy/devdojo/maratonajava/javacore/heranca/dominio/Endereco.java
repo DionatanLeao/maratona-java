@@ -19,4 +19,10 @@ public class Endereco {
     public void setCep(String cep) {
         this.cep = cep;
     }
+
+    public void imprime() {
+        Pessoa p = new Pessoa();
+        p.nome = "Sasa";
+        System.out.println();
+    }
 }
