@@ -20,9 +20,4 @@ public class Endereco {
         this.cep = cep;
     }
 
-    public void imprime() {
-        Pessoa p = new Pessoa();
-        p.nome = "Sasa";
-        System.out.println();
-    }
 }
