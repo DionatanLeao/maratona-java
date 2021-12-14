@@ -12,6 +12,13 @@ public enum TipoCliente {
         this.nomeRelatorio = nomeRelatorio;
     }
 
+    public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+        for (TipoCliente tipoCliente:values()) {
+            return tipoCliente;
+        }
+        return null;
+    }
+
     public int getValor() {
         return valor;
     }
