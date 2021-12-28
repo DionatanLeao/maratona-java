@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Pwrapper.test;
+package academy.devdojo.maratonajava.javacore.Qstring.test;
 
 import java.util.Locale;
 
