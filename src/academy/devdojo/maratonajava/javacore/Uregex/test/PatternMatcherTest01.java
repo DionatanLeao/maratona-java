@@ -5,8 +5,15 @@ import java.util.regex.Pattern;
 
 public class PatternMatcherTest01 {
     public static void main(String[] args) {
-        String regex = "ab";
-        String texto = "abaaba";
+        // \d = Todos os digítos
+        // \\D = Tudo o que não for dígito
+        // \s = Espaços em branco \t \n \f \r
+        // \S = Todos os caracteres excluindo os espaços em branco
+        // \w = a-ZA-Z, dígitos, _
+        // \W = Tudo que não for incluso no \w
+
+        String regex = "\\w";
+        String texto = "@#hh_j2 12gvh21";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
         System.out.println("texto:  " + texto);
@@ -14,7 +21,7 @@ public class PatternMatcherTest01 {
         System.out.println("regex: " + regex);
         System.out.println("Posições encontradas");
         while (matcher.find()) {
-            System.out.print(matcher.start() + " ");
+            System.out.print(matcher.start() + " " + matcher.group() + "\n");
         }
     }
 }
