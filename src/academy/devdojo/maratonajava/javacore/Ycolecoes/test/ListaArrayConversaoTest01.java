@@ -31,7 +31,7 @@ public class ListaArrayConversaoTest01 {
         numerosList.add(15);
         System.out.println(numerosList);
 
-        List<String> strings = Arrays.asList("1", "2");
+        Arrays.asList("1", "2");
 
     }
 }
