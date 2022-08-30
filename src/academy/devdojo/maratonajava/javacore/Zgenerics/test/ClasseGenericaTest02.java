@@ -9,7 +9,7 @@ public class ClasseGenericaTest02 {
     public static void main(String[] args) {
         BarcoRentavelService service = new BarcoRentavelService();
         Barco barco = service.buscarBarcosDisponivel();
-        System.out.println("Usando o barco por um mês...");
+        System.out.println("Usando o Barco por um mês...");
         service.retornarBarcoAlugado(barco);
     }
 }

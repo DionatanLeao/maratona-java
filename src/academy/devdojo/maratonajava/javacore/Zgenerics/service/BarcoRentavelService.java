@@ -22,7 +22,7 @@ public class BarcoRentavelService {
     public void retornarBarcoAlugado(Barco barco) {
         System.out.println("Devolvendo barco: " + barco);
         barcosDisponiveis.add(barco);
-        System.out.println("Carros disponíveis para alugar:");
+        System.out.println("Barcos disponíveis para alugar:");
         System.out.println(barcosDisponiveis);
     }
 }
