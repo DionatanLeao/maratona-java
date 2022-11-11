@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.introduction;
 
-public class Aula008ArraysMultidimensionais03 {
+public class
+Aula008ArraysMultidimensionais03 {
     public static void main(String[] args) {
         int[] arrays = {1,2,3};
 
