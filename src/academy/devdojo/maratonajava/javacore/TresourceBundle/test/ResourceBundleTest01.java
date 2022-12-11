@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.TresourceBundle.test;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Locale;
 import java.util.ResourceBundle;
 
