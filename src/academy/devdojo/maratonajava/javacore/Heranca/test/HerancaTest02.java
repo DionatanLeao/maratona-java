@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.heranca.test;
+package academy.devdojo.maratonajava.javacore.Heranca.test;
 
-import academy.devdojo.maratonajava.javacore.heranca.dominio.Funcionario;
+import academy.devdojo.maratonajava.javacore.Heranca.dominio.Funcionario;
 
 public class HerancaTest02 {
     public static void main(String[] args) {
