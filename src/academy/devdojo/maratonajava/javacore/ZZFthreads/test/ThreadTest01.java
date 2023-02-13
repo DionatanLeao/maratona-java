@@ -1,6 +1,14 @@
 package academy.devdojo.maratonajava.javacore.ZZFthreads.test;
 
 public class ThreadTest01 {
+    /**
+     * Estados da Thread
+     * New
+     * Runnable
+     * Waiting/Blocked
+     * Running
+     * Dead
+     */
     public static void main(String[] args) {
         // Daemon x User
 //        ThreadExample t1 = new ThreadExample('A');
@@ -15,6 +23,7 @@ public class ThreadTest01 {
         t2.start();
         t3.start();
         t4.start();
+        System.out.println("########################### "+Thread.currentThread().getName());
     }
 }
 
