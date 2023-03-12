@@ -1,7 +1,7 @@
-package academy.devdojo.maratonajava.javacore.ZZFthreads.test;
+package academy.devdojo.maratonajava.javacore.ZZGconcorrencia.test;
 
-import academy.devdojo.maratonajava.javacore.ZZFthreads.domain.Members;
-import academy.devdojo.maratonajava.javacore.ZZFthreads.service.EmailDeliveryService;
+import academy.devdojo.maratonajava.javacore.ZZGconcorrencia.domain.Members;
+import academy.devdojo.maratonajava.javacore.ZZGconcorrencia.service.EmailDeliveryService;
 
 import javax.swing.*;
 
@@ -19,7 +19,6 @@ public class EmailDeliveryTest01 {
                 break;
             }
             members.addMemberEmail(email);
-
         }
     }
 }
