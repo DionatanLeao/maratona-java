@@ -14,6 +14,7 @@ public class CompletableFutureTest04 {
     public static void main(String[] args) {
         StoreServiceWithDiscount storeService = new StoreServiceWithDiscount();
         searchPricesWithDiscount(storeService);
+        searchPricesWithDiscountAsync(storeService);
     }
 
     private static void searchPricesWithDiscount(StoreServiceWithDiscount storeService) {
@@ -23,6 +24,19 @@ public class CompletableFutureTest04 {
                 .map(storeService::getPriceSync)
                 .map(Quote::newQuote)
                 .map(storeService::applyDiscount)
+                .forEach(System.out::println);
+    }
+
+    private static void searchPricesWithDiscountAsync(StoreServiceWithDiscount storeService) {
+        List<String> stores = List.of("Store 1", "Store 2", "Store 3", "Store 4");
+        List<CompletableFuture<String>> completableFutures = stores.stream()
+                .map(s -> CompletableFuture.supplyAsync(() -> storeService.getPriceSync(s)))
+                .map(cf -> cf.thenApply(Quote::newQuote))
+                .map(cf -> cf.thenCompose(quote -> CompletableFuture.supplyAsync(() -> storeService.applyDiscount(quote))))
+                .collect(Collectors.toList());
+
+        completableFutures.stream()
+                .map(CompletableFuture::join)
                 .forEach(System.out::println);
     }
 }
