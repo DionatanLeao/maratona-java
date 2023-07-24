@@ -16,7 +16,13 @@ public class Aircraft {
         availableSeats.add("1B");
     }
 
+    public String getName() {
+        return name;
+    }
+
     public boolean bookSeat(String seat) {
         return availableSeats.remove(seat);
     }
+
+
 }
